@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+</head>
+<body>
+    <h1 style="color: {% if result_message == 'Cardiovascular Disease detected' %}red{% else %}green{% endif %};">
+        {{ result_message }}
+    </h1>
+    <a href="/">Go back to the home page</a>
+</body>
+</html>

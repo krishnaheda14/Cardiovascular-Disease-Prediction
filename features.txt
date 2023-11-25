@@ -1,0 +1,28 @@
+Age: This variable represents the age of an individual. It is typically measured in years and is used to indicate the age of a person in the dataset.
+
+ Sex: This variable represents the gender or sex of an individual. It is often coded as binary values, where 0 might represent female and 1 might represent male.
+
+ CP (Chest Pain Type): CP represents the type of chest pain that a person is experiencing. It is usually categorized into several classes (e.g., 0 for no chest pain, 1 for typical angina, 2 for atypical angina, 3 for non-anginal pain, etc.), with each class describing a different type of chest pain.
+
+Trestbps (Resting Blood Pressure): Trestbps is the resting blood pressure of an individual, typically measured in millimeters of mercury (mm Hg). It provides information about an individual's blood pressure when they are at rest.
+
+ Chol (Serum Cholesterol): Chol represents the level of serum cholesterol in an individual's blood, typically measured in milligrams per deciliter (mg/dL). It is an important indicator of heart health and can be used to assess the risk of cardiovascular diseases.
+
+ FBS (Fasting Blood Sugar): FBS is a binary variable (often 1 for high blood sugar and 0 for normal blood sugar) that indicates whether an individual has high fasting blood sugar levels. High fasting blood sugar is often associated with diabetes or prediabetes.
+
+ Restecg (Resting Electrocardiographic Results): Restecg represents the results of a resting electrocardiogram (ECG or EKG). It can take on different values to indicate different ECG results, which can help diagnose heart conditions.
+
+ Thalach (Maximum Heart Rate Achieved): Thalach is the maximum heart rate achieved by an individual during a cardiac stress test or exercise. It is measured in beats per minute (bpm) and can provide information about an individual's cardiovascular fitness.
+
+ Exang (Exercise-Induced Angina): Exang is a binary variable (often 1 for yes and 0 for no) that indicates whether an individual experiences angina (chest pain) during exercise or physical exertion.
+
+ Oldpeak (ST Depression): Oldpeak measures the amount of ST segment depression on an ECG during exercise compared to rest. It is used as an indicator of how much the heart's electrical activity changes during exercise.
+
+ Slope: The slope typically represents the slope of the ST segment on the ECG during exercise. It can have different values to describe the upward or downward slope and can provide additional information about the ECG.
+
+ CA (Number of Major Vessels Colored by Fluoroscopy): CA represents the number of major blood vessels colored by a contrast agent during a fluoroscopy procedure. This can be an important indicator of potential blockages or stenosis in the coronary arteries.
+
+ Thal (Thalassemia): Thal is a variable related to thalassemia, a genetic blood disorder. It can have different values indicating different types and severities of thalassemia.
+
+Target: Target is often a binary variable (1 or 0) and represents the presence or absence of a specific condition or outcome of interest. In the context of cardiovascular health, it might indicate whether an individual has heart disease (1 for yes, 0 for no).
+
