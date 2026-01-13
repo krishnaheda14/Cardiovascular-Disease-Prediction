@@ -8,10 +8,13 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVC
 import xgboost as xgb
+import matplotlib.pyplot as plt
+import numpy as np
 
 # Step 1: Load and Explore the Dataset
 data = pd.read_csv('cardiovascular disease data.csv')
-
+y_arr = []
+x_arr = []
 # Step 3: Data Preprocessing
 # Split the data into features (X) and the target variable (y)
 X = data.drop(columns=['target'])
@@ -39,7 +42,9 @@ for model, model_name in zip(models, model_names):
     # Perform 10-fold cross-validation and calculate the mean accuracy
     cv_scores = cross_val_score(model, X, y, cv=10, scoring='accuracy')
     mean_accuracy = cv_scores.mean()
+    x_arr.append(model_name)
     print(f"{model_name} Model (10-Fold Cross-Validation):")
+    y_arr.append(mean_accuracy*100)
     print("Mean Accuracy:", mean_accuracy)
     print()
 
@@ -64,3 +69,11 @@ voting_report = classification_report(y_test, voting_y_pred)
 print("Voting Classifier (Ensemble) Model:")
 print("Accuracy:", voting_accuracy)
 print(voting_report)
+
+x_array = np.array(["RF","LR","NB","KNN","XGB"])
+y_array = np.array(y_arr)
+bar_colors = ['#e9724d', '#d6d727', '#92cad1', '#79ccb3','#868686+']
+
+plt.bar(x_array,y_array,color=bar_colors)
+plt.ylabel('Accuracy')
+plt.show()

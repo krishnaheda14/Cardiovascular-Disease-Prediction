@@ -53,6 +53,7 @@ def make_prediction():
         thal = int(request.form['thal'])
 
 
+
         # Scale the input data
         input_data = [[age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal]]
         input_data_scaled = standardScaler.transform(input_data)
